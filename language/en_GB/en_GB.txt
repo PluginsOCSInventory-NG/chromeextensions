@@ -1,0 +1,4 @@
+137000 Chrome extensions
+137001 Extension name
+137002 Extension version
+137003 Extension uid

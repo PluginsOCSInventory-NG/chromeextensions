@@ -1,0 +1,4 @@
+137000 Extensions chrome
+137001 Nom de l'extension
+137002 Version de l'extension
+137003 UID de l'extension
