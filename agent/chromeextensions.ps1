@@ -1,5 +1,8 @@
-Get-WmiObject win32_useraccount | ForEach-Object {
-    $user_name = $_.name
+$userdir = dir 'c:\users\'
+ForEach ($user in $userdir)
+ 
+  {
+    $user_name = $user.name
 
     if(Test-Path "C:\Users\$user_name\AppData\Local\Google\Chrome\User Data\Default\Extensions"){
         $extension_folders = Get-ChildItem -Path "C:\Users\$user_name\AppData\Local\Google\Chrome\User Data\Default\Extensions"
@@ -87,5 +90,4 @@ Get-WmiObject win32_useraccount | ForEach-Object {
 
 }
 
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 [Console]::WriteLine($xml)
