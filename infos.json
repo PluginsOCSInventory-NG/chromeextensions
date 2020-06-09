@@ -1,7 +1,7 @@
 {
     "displayName" : "Chromeextensions",
     "author" : ["Gilles DUBOIS"],
-    "contributor" : [],
+    "contributor" : ["Ryan MILLER"],
     "supportedAgent" : ["Windows"],
     "version" : "1.0",
     "licence" : "GPLv2",
